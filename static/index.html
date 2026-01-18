@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SortLater Tube | YouTube Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body class="dark-theme">
+    <header>
+        <div class="logo" onclick="resetFilters()" style="cursor: pointer;">
+            <span class="icon">🎬</span>
+            <h1>SortLater Tube</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search videos or authors...">
+            <span class="search-icon">🔍</span>
+        </div>
+        <div class="header-actions">
+            <button id="settingsBtn" class="header-btn" title="Settings">
+                <span>⚙️</span>
+            </button>
+            <button id="themeToggle" class="header-btn" title="Toggle Theme">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </header>
+
+    <div id="settingsModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Settings</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="apiKeyInput">YouTube API Key</label>
+                    <input type="text" id="apiKeyInput" placeholder="Enter your API Key">
+                </div>
+                <div class="form-group">
+                    <label for="playlistIdInput">Playlist ID</label>
+                    <input type="text" id="playlistIdInput" placeholder="Enter Playlist ID">
+                </div>
+                <p class="settings-help">Updating these will trigger a full sync with YouTube.</p>
+            </div>
+            <div class="modal-footer">
+                <button id="saveSettingsBtn" class="action-btn watch-btn">Save Changes</button>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="nav-tabs">
+            <button class="tab-btn active" data-view="videos">Videos</button>
+            <button class="tab-btn" data-view="channels">Channels</button>
+        </section>
+
+        <div id="videosView">
+            <section class="controls">
+                <div class="filter-group">
+                    <button class="filter-btn active" data-filter="unwatched">To Watch</button>
+                    <button class="filter-btn" data-filter="watched">Watched</button>
+                    <button class="filter-btn" data-filter="all">All</button>
+                </div>
+
+                <div class="sort-group">
+                    <label for="sortSelect">Sort by:</label>
+                    <select id="sortSelect">
+                        <option value="default">Default</option>
+                        <option value="date_desc">Newest</option>
+                        <option value="date_asc">Oldest</option>
+                        <option value="duration_desc">Longest</option>
+                        <option value="duration_asc">Shortest</option>
+                    </select>
+                </div>
+
+                <div class="category-group">
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="uncategorized">Uncategorized</option>
+                    </select>
+                </div>
+            </section>
+
+            <div id="videoContainer" class="video-grid">
+                <!-- Videos will be injected here -->
+                <div class="loader">
+                    <div class="spinner"></div>
+                    <p>Syncing with YouTube...</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="channelsView" class="hidden">
+            <div id="channelContainer" class="channel-list">
+                <!-- Channels will be injected here -->
+            </div>
+        </div>
+    </main>
+
+    <datalist id="category-suggestions"></datalist>
+
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
