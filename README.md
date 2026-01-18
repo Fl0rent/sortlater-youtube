@@ -1,4 +1,4 @@
-# 📺 SortLater Tube
+# 📺 SortLater PLaylist youTube
 
 Un outil moderne et puissant pour gérer, trier et redécouvrir tes playlists YouTube localement.
 
