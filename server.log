@@ -1,0 +1,220 @@
+INFO:     Started server process [53717]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:44134 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44138 - "GET /static/script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:44134 - "GET /static/style.css HTTP/1.1" 304 Not Modified
+🔍 Récupération des vidéos en cours...
+✅ Fichier CSV synchronisé (66 vidéos, avec support Catégories).
+INFO:     127.0.0.1:44134 - "GET /api/videos HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60208 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60208 - "GET /static/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60218 - "GET /static/script.js HTTP/1.1" 200 OK
+🔍 Récupération des vidéos en cours...
+✅ Fichier CSV synchronisé (66 vidéos, avec support Catégories).
+INFO:     127.0.0.1:60218 - "GET /api/videos HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49854 - "POST /api/update HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54912 - "POST /api/update HTTP/1.1" 200 OK
+🔍 Récupération des vidéos en cours...
+✅ Fichier CSV synchronisé (66 vidéos, avec support Catégories).
+INFO:     127.0.0.1:40934 - "GET /api/videos HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40950 - "POST /api/update HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51856 - "POST /api/update HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51864 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51864 - "GET /static/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51864 - "GET /static/script.js HTTP/1.1" 304 Not Modified
+🔍 Récupération des vidéos en cours...
+✅ Fichier CSV synchronisé (66 vidéos, avec support Catégories).
+INFO:     127.0.0.1:51864 - "GET /api/videos HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39126 - "GET / HTTP/1.1" 200 OK
+🔍 Récupération des vidéos en cours...
+✅ Fichier CSV synchronisé (66 vidéos, avec support Catégories).
+INFO:     127.0.0.1:39126 - "GET /api/videos HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52888 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52888 - "GET /static/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52900 - "GET /static/script.js HTTP/1.1" 304 Not Modified
+🔍 Récupération des vidéos en cours...
+✅ Fichier CSV synchronisé (66 vidéos, avec support Catégories).
+INFO:     127.0.0.1:52900 - "GET /api/videos HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38052 - "POST /api/update HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41192 - "POST /api/update HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44226 - "POST /api/update HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53508 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53508 - "GET /static/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53522 - "GET /static/script.js HTTP/1.1" 304 Not Modified
+🔍 Récupération des vidéos en cours...
+✅ Fichier CSV synchronisé (66 vidéos, avec support Catégories).
+INFO:     127.0.0.1:53522 - "GET /api/videos HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53534 - "POST /api/update HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59178 - "POST /api/update HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33422 - "POST /api/update HTTP/1.1" 200 OK
+🔍 Récupération des vidéos en cours...
+✅ Fichier CSV synchronisé (66 vidéos, avec support Catégories).
+INFO:     127.0.0.1:44118 - "GET /api/videos HTTP/1.1" 200 OK
+INFO:     Started server process [55968]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:58048 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39912 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39912 - "GET /static/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:39916 - "GET /static/script.js HTTP/1.1" 304 Not Modified
+2026-01-18 19:20:14,304 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-18 19:20:14,304 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-18 19:20:15,345 - INFO - ✅ Fichier CSV synchronisé (66 vidéos).
+2026-01-18 19:20:15,345 - INFO - ✅ Fichier CSV synchronisé (66 vidéos).
+🔍 Récupération des vidéos en cours...
+INFO:     127.0.0.1:39916 - "GET /api/videos HTTP/1.1" 200 OK
+2026-01-18 19:20:24,457 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-18 19:20:24,457 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-18 19:20:25,727 - INFO - ✅ Fichier CSV synchronisé (66 vidéos).
+2026-01-18 19:20:25,727 - INFO - ✅ Fichier CSV synchronisé (66 vidéos).
+🔍 Récupération des vidéos en cours...
+INFO:     127.0.0.1:41702 - "GET /api/videos HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [55968]
+INFO:     Started server process [56671]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-01-18 19:21:53,400 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-18 19:21:53,400 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-18 19:21:53,416 - INFO - 🔍 Récupération des vidéos en cours...
+2026-01-18 19:21:53,416 - INFO - 🔍 Récupération des vidéos en cours...
+2026-01-18 19:21:54,451 - INFO - ✅ Fichier CSV synchronisé (66 vidéos).
+2026-01-18 19:21:54,451 - INFO - ✅ Fichier CSV synchronisé (66 vidéos).
+INFO:     127.0.0.1:46148 - "GET /api/videos HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44656 - "GET / HTTP/1.1" 200 OK
+2026-01-18 19:22:07,003 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-18 19:22:07,003 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-18 19:22:07,018 - INFO - 🔍 Récupération des vidéos en cours...
+2026-01-18 19:22:07,018 - INFO - 🔍 Récupération des vidéos en cours...
+2026-01-18 19:22:08,137 - INFO - ✅ Fichier CSV synchronisé (66 vidéos).
+2026-01-18 19:22:08,137 - INFO - ✅ Fichier CSV synchronisé (66 vidéos).
+INFO:     127.0.0.1:44656 - "GET /api/videos HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43702 - "GET / HTTP/1.1" 200 OK
+2026-01-18 19:22:22,897 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-18 19:22:22,897 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-18 19:22:22,909 - INFO - 🔍 Récupération des vidéos en cours...
+2026-01-18 19:22:22,909 - INFO - 🔍 Récupération des vidéos en cours...
+2026-01-18 19:22:24,014 - INFO - ✅ Fichier CSV synchronisé (66 vidéos).
+2026-01-18 19:22:24,014 - INFO - ✅ Fichier CSV synchronisé (66 vidéos).
+INFO:     127.0.0.1:43702 - "GET /api/videos HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56596 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56596 - "GET /static/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56602 - "GET /static/script.js HTTP/1.1" 304 Not Modified
+2026-01-18 19:27:49,610 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-18 19:27:49,610 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-18 19:27:49,626 - INFO - 🔍 Récupération des vidéos en cours...
+2026-01-18 19:27:49,626 - INFO - 🔍 Récupération des vidéos en cours...
+2026-01-18 19:27:50,709 - INFO - ✅ Fichier CSV synchronisé (66 vidéos).
+2026-01-18 19:27:50,709 - INFO - ✅ Fichier CSV synchronisé (66 vidéos).
+INFO:     127.0.0.1:56602 - "GET /api/videos HTTP/1.1" 200 OK
+2026-01-18 19:28:00,247 - INFO - ✅ Vidéo mise à jour : https://www.youtube.com/watch?v=0MKzYQfkujc
+2026-01-18 19:28:00,247 - INFO - ✅ Vidéo mise à jour : https://www.youtube.com/watch?v=0MKzYQfkujc
+INFO:     127.0.0.1:55542 - "POST /api/update HTTP/1.1" 200 OK
+2026-01-18 19:28:01,491 - INFO - ✅ Vidéo mise à jour : https://www.youtube.com/watch?v=GO0J-k2iJR4
+2026-01-18 19:28:01,491 - INFO - ✅ Vidéo mise à jour : https://www.youtube.com/watch?v=GO0J-k2iJR4
+INFO:     127.0.0.1:55542 - "POST /api/update HTTP/1.1" 200 OK
+2026-01-18 19:33:22,356 - INFO - ✅ Vidéo mise à jour : https://www.youtube.com/watch?v=_Lizgg_PO5E
+2026-01-18 19:33:22,356 - INFO - ✅ Vidéo mise à jour : https://www.youtube.com/watch?v=_Lizgg_PO5E
+INFO:     127.0.0.1:40478 - "POST /api/update HTTP/1.1" 200 OK
+2026-01-18 19:33:24,243 - INFO - ✅ Vidéo mise à jour : https://www.youtube.com/watch?v=NjkEE6Yok9U
+2026-01-18 19:33:24,243 - INFO - ✅ Vidéo mise à jour : https://www.youtube.com/watch?v=NjkEE6Yok9U
+INFO:     127.0.0.1:40478 - "POST /api/update HTTP/1.1" 200 OK
+2026-01-18 19:33:25,964 - INFO - ✅ Vidéo mise à jour : https://www.youtube.com/watch?v=UuT61kf292A
+2026-01-18 19:33:25,964 - INFO - ✅ Vidéo mise à jour : https://www.youtube.com/watch?v=UuT61kf292A
+INFO:     127.0.0.1:40478 - "POST /api/update HTTP/1.1" 200 OK
+2026-01-18 19:33:28,309 - INFO - ✅ Vidéo mise à jour : https://www.youtube.com/watch?v=a-v8qcXYvR8
+2026-01-18 19:33:28,309 - INFO - ✅ Vidéo mise à jour : https://www.youtube.com/watch?v=a-v8qcXYvR8
+INFO:     127.0.0.1:40478 - "POST /api/update HTTP/1.1" 200 OK
+2026-01-18 19:33:31,645 - INFO - ✅ Vidéo mise à jour : https://www.youtube.com/watch?v=QyhBakGTyeI
+2026-01-18 19:33:31,645 - INFO - ✅ Vidéo mise à jour : https://www.youtube.com/watch?v=QyhBakGTyeI
+INFO:     127.0.0.1:40478 - "POST /api/update HTTP/1.1" 200 OK
+2026-01-18 19:33:33,048 - INFO - ✅ Vidéo mise à jour : https://www.youtube.com/watch?v=p6-I-IPN36s
+2026-01-18 19:33:33,048 - INFO - ✅ Vidéo mise à jour : https://www.youtube.com/watch?v=p6-I-IPN36s
+INFO:     127.0.0.1:40478 - "POST /api/update HTTP/1.1" 200 OK
+2026-01-18 19:33:37,583 - INFO - ✅ Vidéo mise à jour : https://www.youtube.com/watch?v=p6-I-IPN36s
+2026-01-18 19:33:37,583 - INFO - ✅ Vidéo mise à jour : https://www.youtube.com/watch?v=p6-I-IPN36s
+INFO:     127.0.0.1:40478 - "POST /api/update HTTP/1.1" 200 OK
+2026-01-18 19:33:40,843 - INFO - ✅ Vidéo mise à jour : https://www.youtube.com/watch?v=QyhBakGTyeI
+2026-01-18 19:33:40,843 - INFO - ✅ Vidéo mise à jour : https://www.youtube.com/watch?v=QyhBakGTyeI
+INFO:     127.0.0.1:40478 - "POST /api/update HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59274 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59274 - "GET /static/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59288 - "GET /static/script.js HTTP/1.1" 200 OK
+2026-01-18 19:34:02,113 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-18 19:34:02,113 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-18 19:34:02,157 - INFO - 🔍 Récupération des vidéos en cours...
+2026-01-18 19:34:02,157 - INFO - 🔍 Récupération des vidéos en cours...
+2026-01-18 19:34:03,132 - INFO - ✅ Fichier CSV synchronisé (66 vidéos).
+2026-01-18 19:34:03,132 - INFO - ✅ Fichier CSV synchronisé (66 vidéos).
+INFO:     127.0.0.1:59288 - "GET /api/videos HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36580 - "GET /static/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36594 - "GET /static/script.js HTTP/1.1" 304 Not Modified
+2026-01-18 19:35:56,340 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-18 19:35:56,340 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-18 19:35:56,361 - INFO - 🔍 Récupération des vidéos en cours...
+2026-01-18 19:35:56,361 - INFO - 🔍 Récupération des vidéos en cours...
+2026-01-18 19:35:57,484 - INFO - ✅ Fichier CSV synchronisé (66 vidéos).
+2026-01-18 19:35:57,484 - INFO - ✅ Fichier CSV synchronisé (66 vidéos).
+INFO:     127.0.0.1:36580 - "GET /api/videos HTTP/1.1" 200 OK
+2026-01-18 19:36:10,216 - INFO - ✅ Vidéo mise à jour : https://www.youtube.com/watch?v=bGMo1XCNQMo
+2026-01-18 19:36:10,216 - INFO - ✅ Vidéo mise à jour : https://www.youtube.com/watch?v=bGMo1XCNQMo
+INFO:     127.0.0.1:53286 - "POST /api/update HTTP/1.1" 200 OK
+2026-01-18 19:36:15,409 - INFO - ✅ Vidéo mise à jour : https://www.youtube.com/watch?v=bGMo1XCNQMo
+2026-01-18 19:36:15,409 - INFO - ✅ Vidéo mise à jour : https://www.youtube.com/watch?v=bGMo1XCNQMo
+INFO:     127.0.0.1:53302 - "POST /api/update HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39272 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39272 - "GET /static/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39284 - "GET /static/script.js HTTP/1.1" 304 Not Modified
+2026-01-18 19:37:01,125 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-18 19:37:01,125 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-18 19:37:01,151 - INFO - 🔍 Récupération des vidéos en cours...
+2026-01-18 19:37:01,151 - INFO - 🔍 Récupération des vidéos en cours...
+2026-01-18 19:37:02,268 - INFO - ✅ Fichier CSV synchronisé (66 vidéos).
+2026-01-18 19:37:02,268 - INFO - ✅ Fichier CSV synchronisé (66 vidéos).
+INFO:     127.0.0.1:39272 - "GET /api/videos HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53190 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53190 - "GET /static/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53200 - "GET /static/script.js HTTP/1.1" 304 Not Modified
+2026-01-18 19:38:13,432 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-18 19:38:13,432 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-18 19:38:13,486 - INFO - 🔍 Récupération des vidéos en cours...
+2026-01-18 19:38:13,486 - INFO - 🔍 Récupération des vidéos en cours...
+2026-01-18 19:38:14,454 - INFO - ✅ Fichier CSV synchronisé (66 vidéos).
+2026-01-18 19:38:14,454 - INFO - ✅ Fichier CSV synchronisé (66 vidéos).
+INFO:     127.0.0.1:53190 - "GET /api/videos HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40118 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40118 - "GET /static/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40120 - "GET /static/script.js HTTP/1.1" 304 Not Modified
+2026-01-18 19:39:25,874 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-18 19:39:25,874 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-18 19:39:25,892 - INFO - 🔍 Récupération des vidéos en cours...
+2026-01-18 19:39:25,892 - INFO - 🔍 Récupération des vidéos en cours...
+2026-01-18 19:39:26,786 - INFO - ✅ Fichier CSV synchronisé (66 vidéos).
+2026-01-18 19:39:26,786 - INFO - ✅ Fichier CSV synchronisé (66 vidéos).
+INFO:     127.0.0.1:40120 - "GET /api/videos HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55758 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55758 - "GET /static/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55774 - "GET /static/script.js HTTP/1.1" 304 Not Modified
+2026-01-18 19:40:48,410 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-18 19:40:48,410 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-18 19:40:48,507 - INFO - 🔍 Récupération des vidéos en cours...
+2026-01-18 19:40:48,507 - INFO - 🔍 Récupération des vidéos en cours...
+2026-01-18 19:40:49,919 - INFO - ✅ Fichier CSV synchronisé (66 vidéos).
+2026-01-18 19:40:49,919 - INFO - ✅ Fichier CSV synchronisé (66 vidéos).
+INFO:     127.0.0.1:55758 - "GET /api/videos HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42802 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42802 - "GET /static/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42814 - "GET /static/script.js HTTP/1.1" 304 Not Modified
+2026-01-18 19:42:03,042 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-18 19:42:03,042 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-18 19:42:03,078 - INFO - 🔍 Récupération des vidéos en cours...
+2026-01-18 19:42:03,078 - INFO - 🔍 Récupération des vidéos en cours...
+2026-01-18 19:42:03,952 - INFO - ✅ Fichier CSV synchronisé (66 vidéos).
+2026-01-18 19:42:03,952 - INFO - ✅ Fichier CSV synchronisé (66 vidéos).
+INFO:     127.0.0.1:42802 - "GET /api/videos HTTP/1.1" 200 OK

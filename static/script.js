@@ -2,6 +2,9 @@ let allVideos = [];
 let currentFilter = 'unwatched';
 let currentSearch = '';
 let currentCategory = 'all';
+const VIDEOS_PER_PAGE = 12;
+let currentPage = 1;
+let totalPages = 1;
 
 document.addEventListener("DOMContentLoaded", () => {
     initTheme();
@@ -59,6 +62,7 @@ function renderVideos() {
         if (currentFilter === 'all') statusMatch = true;
         else if (currentFilter === 'watched' && isWatched) statusMatch = true;
         else if (currentFilter === 'unwatched' && !isWatched) statusMatch = true;
+        else if (currentFilter === 'favorites' && v.favori) statusMatch = true;
 
         let catMatch = true;
         if (currentCategory === 'uncategorized') {
@@ -73,7 +77,13 @@ function renderVideos() {
 
     sortVideos(filtered);
 
-    filtered.forEach(video => {
+    // Pagination calculations
+    totalPages = Math.max(1, Math.ceil(filtered.length / VIDEOS_PER_PAGE));
+    if (currentPage > totalPages) currentPage = totalPages;
+    const startIdx = (currentPage - 1) * VIDEOS_PER_PAGE;
+    const paginated = filtered.slice(startIdx, startIdx + VIDEOS_PER_PAGE);
+
+    paginated.forEach(video => {
         // Fix: Use correct URL splitting logic
         const urlObj = new URL(video.URL);
         const vidId = urlObj.searchParams.get('v');
@@ -82,6 +92,10 @@ function renderVideos() {
         card.className = `card ${video.Statut === "Vu" ? 'watched' : ''}`;
         card.innerHTML = `
             <div class="card-image">
+                <button class="fav-btn ${video.favori ? 'active' : ''}" 
+                    onclick="toggleFavorite(event, '${video.URL}')" title="Favorite">
+                    ${video.favori ? '★' : '☆'}
+                </button>
                 <img src="https://img.youtube.com/vi/${vidId}/hqdefault.jpg" alt="${video.Titre}">
                 <span class="duration-tag">${video['Durée']}</span>
             </div>
@@ -104,6 +118,70 @@ function renderVideos() {
         `;
         container.appendChild(card);
     });
+
+    renderPagination();
+}
+
+function renderPagination() {
+    let paginationDiv = document.getElementById('paginationContainer');
+    if (!paginationDiv) {
+        paginationDiv = document.createElement('div');
+        paginationDiv.id = 'paginationContainer';
+        paginationDiv.className = 'pagination-controls';
+        document.getElementById('videosView').appendChild(paginationDiv);
+    }
+
+    paginationDiv.innerHTML = '';
+
+    if (totalPages <= 1) return;
+
+    const prevBtn = document.createElement('button');
+    prevBtn.className = 'page-btn';
+    prevBtn.textContent = '← Précédent';
+    prevBtn.disabled = currentPage === 1;
+    prevBtn.onclick = () => {
+        currentPage--;
+        renderVideos();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    const nextBtn = document.createElement('button');
+    nextBtn.className = 'page-btn';
+    nextBtn.textContent = 'Suivant →';
+    nextBtn.disabled = currentPage === totalPages;
+    nextBtn.onclick = () => {
+        currentPage++;
+        renderVideos();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    const info = document.createElement('span');
+    info.className = 'page-info';
+    info.textContent = `Page ${currentPage} sur ${totalPages}`;
+
+    paginationDiv.appendChild(prevBtn);
+    paginationDiv.appendChild(info);
+    paginationDiv.appendChild(nextBtn);
+}
+
+async function toggleFavorite(event, url) {
+    event.stopPropagation();
+    const vid = allVideos.find(v => v.URL === url);
+    if (!vid) return;
+
+    const newFavori = !vid.favori;
+    vid.favori = newFavori;
+    renderVideos();
+
+    try {
+        await fetch('/api/update', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ url, favori: newFavori })
+        });
+    } catch (error) {
+        console.error("Favorite update failed:", error);
+    }
 }
 
 async function updateMetadata(url, status, category) {
@@ -252,6 +330,7 @@ function renderChannels() {
 function setupEventListeners() {
     document.getElementById('searchInput').addEventListener('input', (e) => {
         currentSearch = e.target.value;
+        currentPage = 1;
         renderVideos();
     });
 
@@ -260,13 +339,15 @@ function setupEventListeners() {
             document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             currentFilter = btn.dataset.filter;
+            currentPage = 1;
             renderVideos();
         });
     });
 
-    document.getElementById('sortSelect').addEventListener('change', renderVideos);
+    document.getElementById('sortSelect').addEventListener('change', () => { currentPage = 1; renderVideos(); });
     document.getElementById('categoryFilter').addEventListener('change', (e) => {
         currentCategory = e.target.value;
+        currentPage = 1;
         renderVideos();
     });
 

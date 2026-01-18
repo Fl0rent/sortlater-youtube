@@ -11,6 +11,8 @@
     --glass: rgba(15, 23, 42, 0.8);
     --border: rgba(255, 255, 255, 0.1);
     --input-bg: rgba(255, 255, 255, 0.05);
+    --hover-glow: rgba(255, 215, 0, 0.4);
+    --hover-border: #ffd700;
 }
 
 body.light-theme {
@@ -23,6 +25,8 @@ body.light-theme {
     --glass: rgba(255, 255, 255, 0.8);
     --border: rgba(0, 0, 0, 0.1);
     --input-bg: rgba(0, 0, 0, 0.05);
+    --hover-glow: rgba(30, 41, 59, 0.15);
+    --hover-border: #1e293b;
 }
 
 * {
@@ -229,9 +233,9 @@ select {
 }
 
 .card:hover {
-    box-shadow: 0 0 25px rgba(57, 255, 20, 0.4);
-    /* Vert Fluo */
-    border-color: #37ff14;
+    box-shadow: 0 0 25px var(--hover-glow);
+    border-color: var(--hover-border);
+    border-width: 4px;
 }
 
 .card-image {
@@ -257,6 +261,44 @@ select {
     border-radius: 4px;
     font-size: 0.8rem;
     font-weight: 600;
+}
+
+.fav-btn {
+    position: absolute;
+    top: 0.5rem;
+    left: auto !important;
+    right: 0.5rem !important;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.2s;
+    z-index: 10;
+}
+
+/* Ensure favorite button on right */
+.card-image .fav-btn {
+    right: 0.5rem !important;
+    left: auto !important;
+}
+
+.fav-btn:hover {
+    transform: scale(1.1);
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.fav-btn.active {
+    color: #fbbf24;
+    /* yellow-400 */
+    border-color: #fbbf24;
 }
 
 .card-content {
@@ -315,22 +357,26 @@ select {
 }
 
 .watch-btn {
-    background: var(--success);
+    background: #dc2626;
     color: white;
 }
 
 .watch-btn:hover {
-    background: #059669;
+    background: var(--danger);
 }
 
 .seen-btn {
-    background: var(--input-bg);
-    color: var(--text-primary);
+    background: var(--success);
+    color: white;
+}
+
+.seen-btn:hover {
+    background: #059669;
+    /* Darker green */
 }
 
 .seen-btn.active {
-    background: var(--success);
-    color: white;
+    opacity: 0.8;
 }
 
 /* States */
@@ -515,4 +561,43 @@ select {
         flex-direction: column;
         align-items: stretch;
     }
+}
+
+/* Pagination Controls */
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 0 4rem;
+    grid-column: 1 / -1;
+}
+
+.page-btn {
+    padding: 0.6rem 1.2rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+    min-width: 120px;
+}
+
+.page-btn:hover:not(:disabled) {
+    border-color: var(--accent);
+    background: var(--input-bg);
+    transform: translateY(-2px);
+}
+
+.page-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.page-info {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    font-weight: 600;
 }

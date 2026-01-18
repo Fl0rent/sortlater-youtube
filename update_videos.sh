@@ -13,7 +13,16 @@ fi
 # 2. Lancer le serveur
 echo "🚀 Lancement du serveur SortLater Tube..."
 echo "📍 Adresse : http://localhost:8000"
+
+if [[ "$1" == "--background" ]]; then
+    echo "⚙️ Mode arrière-plan activé. Les sorties seront dans server.log"
+    nohup "$VENV_DIR/bin/python3" main.py >> server.log 2>&1 &
+    echo "✅ Serveur lancé avec le PID $!"
+    exit 0
+fi
+
 echo " (Laisse cette fenêtre ouverte tant que tu utilises l'application)"
+echo " (Appuie sur CTRL+C pour arrêter)"
 echo ""
 "$VENV_DIR/bin/python3" main.py
 
